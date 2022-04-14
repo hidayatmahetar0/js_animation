@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Landify - Hero 01</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="images/logo-larq 1.png" />
+            </a>
+
+            <div class="menu-container">
+                <div class="left">
+                    <div class="menus">
+                        <a href="#" class="menu-item">Home</a>
+                        <a href="#" class="menu-item">About</a>
+                        <a href="#" class="menu-item">Bottest</a>
+                        <a href="#" class="menu-item">About</a>
+                        <a href="#" class="menu-item">Cotect</a>
+                        <a href="#" class="menu-item">
+                            <button class="btn">Login</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toggle-menu" class="toggle-menu">
+                <span class="text-menu">Menu</span>
+                <span class="text-close">Close</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero ">
+            <div class="container ">
+                <div>
+                    <div class="txt ">
+                        <h4>Self Cleaning bottle<br> In 60 Seconds</h4>
+                        <h6>Hit refresh with the intelligently clean bottle built for adventure.</h6>
+                        <button class="btn2">KNOW MORE</button>
+                    </div>
+                    <div class="circle ">
+                        <img src="images/Ellipse 3.png" />
+                    </div>
+                </div>
+                <div class="scroll-container">
+                    <div class="content scroll-element js-scroll slide-right">
+                        <img src="images/bottle.png" class="scroll-caption" />
+                    </div>
+                    <div class="mobile-fragment scroll-element js-scroll slide-right">
+                        <img src="images/opner.png" class="scroll-caption" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.getElementById('toggle-menu').addEventListener('click', () => {
+            if (header.classList.toString().includes('open')) {
+                header.classList.remove('open')
+                return
+            }
+            header.classList.add('open')
+        })
+    </script>
+</body>
+
+</html>
